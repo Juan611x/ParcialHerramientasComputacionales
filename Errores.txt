@@ -1,0 +1,11 @@
+Punto (B)
+
+1. A. Se presentaron errores de sintaxis debido a la mala organización de las cadenas de "ifs"
+   B. Se presento un error lógico a la hora de escribir el producto, si nombre del producto cuenta con espacio y el usuario lo escribe con espacio, el programa no será capaz de leerlo (esto es debido a que usamos un .split para leer los datos)
+   C. Se presento un error Sintaxis debido a que se escribió mal uno de los iguales en el programa, se le asignó un valor a una variable con el signo equivocado de igualación, en vez del de asignación
+
+2. A. A la hora de terminar el programa, hacer una revisión nuevamente de todas las líneas de código para verificar que este correcta su estructura.  
+   B. Para solucionar este error lógico, debemos de pedir los datos por separado y no con un str.split
+   C. A la hora de terminar el programa, revisar todas las líneas de código para verificar que no hayan errores de escritura.
+
+
