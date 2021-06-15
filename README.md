@@ -33,7 +33,7 @@ compra = str(input()).split()
 ## en esta parte se pide el dato del nombre del producto que se va a comprar y la cantidad de este
 
 SioNo = str(input("¿Desea comprar algo más? "))
-##En esta parte se pide el dato de si el usuari desea comprar otro producto o desea finlaizar la compra
+##En esta parte se pide el dato que decide si el usuario desea comprar otro producto o desea finalizar la compra
 ```
 _Salida:_
 ```python
@@ -46,8 +46,8 @@ s = "Python syntax highlighting"
         print(x, end=' ')
 
     print(" ")
-    ## esta parte del codigo lo que hace es arrojar como dato final un texto que integra el rol del usuario, su cédula, cuanto debe pagar y una 
-    ##lista con los codigos de los productos seleccionados
+    ## esta parte del código lo que hace es arrojar como dato final un texto que integra el rol del usuario, su cédula, cuanto debe pagar y una 
+    ##lista con los códigos de los productos seleccionados
 
 ```
 
@@ -64,7 +64,7 @@ s = "Python syntax highlighting"
      "Hambueguersa" : ["320",5000],
      "Pizza"   : ["330",4000]
 }
-##Se define el deccionario "producto" que es donde almasenamos los productos disponibles y su respectivo codigo y precio
+##Se define el deccionario "producto" que es donde se almacenan los productos disponibles y su respectivo código y precio
 
 def tienda():
 
@@ -87,13 +87,14 @@ def tienda():
     precio = 0
 
     lista = []
-    ##Definimos las varialbes: "op" que es un booleano que almaena True, precio que es una esecie de contador para al final imprimir el precio final por loque se declara 
-    ##con el valor 0 al inicio, y por ultimo "lista" que es donde guardaremos los codigos de los productos que compro para ser impresos al final.
+    ##Definimos las varialbes: "op" que es una variable booleana que almacena True
+    ##precio que es un contador que almacena el valor final a pagar 
+    ##con el valor 0 al inicio, y por último "lista" que es donde guardaremos los codigos de los productos que compro para ser impresos al final.
 
     while op == True:
-    ##El while lo usamos para que el ciente pueda registrartantos productos como quiera, hasta que op sea False, en dicho caso se calcelara el ciclo
+    ##El while lo usamos para que el ciente pueda registrar tantos productos como quiera, hasta que op sea False, en dicho caso se calcelara el ciclo
         compra = str(input()).split()
-        ##Recive el nombre del producto y la cantidad, estos datos se almacenan en una lista
+        ##Recibe el nombre del producto y la cantidad, estos datos se almacenan en una lista
         
         
         if compra[0] in producto:
@@ -112,9 +113,9 @@ def tienda():
 
             print("No se encuentra el producto")
 
-        ## esta cdena de if's lo primero que hace es comprobar si el producto que el cliente desea comprar esta en el diccionrio "producto", si no esta 
-        ##printea el mensaje "No se encuentra el producto", pero de lo contrario si si esta,revisa que rol fue digitado anteriormente y dependiendo de eso 
-        ##realiza el calculo respectivo al precio del producto con su respectivo descuento y agrega el codigo del producto a "lista" para luego ser impresa
+        ## esta cadena de if's lo primero que hace es comprobar si el producto que el cliente desea comprar está en el diccionrio "producto", si no se encuentra 
+        ##realiza un print con el mensaje "No se encuentra el producto", de lo contrario si está, revisa que rol fue digitado anteriormente y dependiendo de eso 
+        ##realiza el calculo respectivo al precio del producto con su respectivo descuento, agregando el código del producto a "lista" para luego ser impreso
         
         SioNo = str(input("¿Desea comprar algo más? "))
         ##imprime le pregunta "¿Desea comprar algo más? " y guarda su respuesta
@@ -125,8 +126,8 @@ def tienda():
         else:
 
             op = False
-        ##Si la respuesta guardada en "SioNo" es si, "op" es True ,de lo contrario si es no entonces "op" es False y el ciclo while se rompera dejando de 
-        ##registrar mas productos
+        ##Si la respuesta guardada en "SioNo" es si, "op" es True ,de lo contrario si es no, entonces "op" es False y el ciclo while se rompera dejando de 
+        ##registrar más productos
     print("El ",rol, "con cedula ", cedula,", ", "Debe pagar ",precio,"por el producto ", end = ' ')
 
     for x in lista:
@@ -134,11 +135,10 @@ def tienda():
         print(x, end=' ')
 
     print(" ")
-    ##En esta parte ya para finalizar se imprime el mensaje respectiovo con los valores de las variables "rol", "cedula", y "precio" seguido de los 
-    ##coódigos de los productos registrados
+    ##Para finalizar, se imprime el mensaje respectivo con los valores de las variables "rol", "cédula", y "precio" seguido de los 
+    ##códigos de los productos registrados
 ```
 
 
 ## Contenido del repositorio
-El repositorio solo contiene 3 archivos uno es este que estas lellendo y los otros 2 son un archivo de word con la redaccion de los fallos ue se nos presetaron y su respectia solucion y el otro es el codigo como tal.
-
+El repositorio solo contiene 3 archivos, uno es el archivo "README", donde procedemos a la explicación del código, el siguiente es un archivo ".txt", donde explicamos los errores que tuvimos y los posibles errores que podrían generarse junto con su posible corrección. Finalmente, el último archivo es el código de python que da solución al problema del enunciado.
